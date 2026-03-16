@@ -1,0 +1,60 @@
+{
+  "@@locale": "en",
+  
+  "appName": "UpTodo",
+  "@appName": {
+    "description": "The title of the application"
+  },
+
+  "onboardingTitle1": "Manage your tasks",
+  "onboardingSubtitle1": "You can easily manage all of your daily tasks in UpTodo for free",
+  "onboardingTitle2": "Create daily routine",
+  "onboardingSubtitle2": "In UpTodo you can create your personalized routine to stay productive",
+  "onboardingTitle3": "Organize your tasks",
+  "onboardingSubtitle3": "You can organize your daily tasks by adding your tasks into separate categories",
+  
+  "skip": "SKIP",
+  "back": "BACK",
+  "next": "NEXT",
+  "getStarted": "GET STARTED",
+
+
+  
+  "loginTitle": "Login",
+  "registerTitle": "Register",
+  "usernameHint": "Username",
+  "emailHint": "Enter your Email",
+  "passwordHint": "••••••••",
+  "loginButton": "Login",
+  "registerButton": "Register",
+  "loginWithGoogle": "Login with Google",
+  "loginWithApple": "Login with Apple",
+  "dontHaveAccount": "Don't have an account? Register",
+  "alreadyHaveAccount": "Already have an account? Login",
+
+  "homeEmptyStateTitle": "What do you want to do today?",
+  "homeEmptyStateSubtitle": "Tap + to add your tasks",
+  
+  "navHome": "Index",
+  "navCalendar": "Calendar",
+  "navFocus": "Focus",
+  "navProfile": "Profile",
+
+  "addTaskTitle": "Add Task",
+  "taskNameHint": "Do math homework",
+  "taskDescriptionHint": "Description",
+  "chooseTime": "Choose Time",
+  "chooseCategory": "Choose Category",
+  "choosePriority": "Choose Priority",
+  "cancelBtn": "Cancel",
+  "saveBtn": "Save",
+
+  "profileTitle": "Profile",
+  "settingsAppLanguage": "App Language",
+  "settingsTheme": "Change App Color",
+  "settingsTypography": "Change App Typography",
+  "settingsAbout": "About Us",
+  "settingsFAQ": "FAQ",
+  "settingsHelp": "Help & Feedback",
+  "settingsLogout": "Log out"
+}

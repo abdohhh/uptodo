@@ -1,0 +1,55 @@
+{
+  "@@locale": "ar",
+  
+  "appName": "UpTodo",
+  
+  "onboardingTitle1": "إدارة مهامك",
+  "onboardingSubtitle1": "يمكنك بسهولة إدارة جميع مهامك اليومية في UpTodo مجانًا",
+  "onboardingTitle2": "إنشاء روتين يومي",
+  "onboardingSubtitle2": "في UpTodo يمكنك إنشاء روتينك المخصص لتبقى منتجًا",
+  "onboardingTitle3": "تنظيم مهامك",
+  "onboardingSubtitle3": "يمكنك تنظيم مهامك اليومية عن طريق إضافتها إلى فئات منفصلة",
+  
+  "skip": "تخطي",
+  "back": "رجوع",
+  "next": "التالي",
+  "getStarted": "البدء",
+
+  "loginTitle": "تسجيل الدخول",
+  "registerTitle": "إنشاء حساب",
+  "usernameHint": "اسم المستخدم",
+  "emailHint": "أدخل بريدك الإلكتروني",
+  "passwordHint": "••••••••",
+  "loginButton": "تسجيل الدخول",
+  "registerButton": "إنشاء حساب",
+  "loginWithGoogle": "تسجيل الدخول باستخدام Google",
+  "loginWithApple": "تسجيل الدخول باستخدام Apple",
+  "dontHaveAccount": "ليس لديك حساب؟ سجل الآن",
+  "alreadyHaveAccount": "لديك حساب بالفعل؟ قم بتسجيل الدخول",
+
+  "homeEmptyStateTitle": "ماذا تريد أن تفعل اليوم؟",
+  "homeEmptyStateSubtitle": "اضغط على + لإضافة مهامك",
+  
+  "navHome": "الرئيسية",
+  "navCalendar": "التقويم",
+  "navFocus": "التركيز",
+  "navProfile": "الملف الشخصي",
+
+  "addTaskTitle": "إضافة مهمة",
+  "taskNameHint": "أداء الواجب المنزلي للرياضيات",
+  "taskDescriptionHint": "الوصف",
+  "chooseTime": "اختيار الوقت",
+  "chooseCategory": "اختيار الفئة",
+  "choosePriority": "اختيار الأولوية",
+  "cancelBtn": "إلغاء",
+  "saveBtn": "حفظ",
+
+  "profileTitle": "الملف الشخصي",
+  "settingsAppLanguage": "لغة التطبيق",
+  "settingsTheme": "تغيير لون التطبيق",
+  "settingsTypography": "تغيير خط التطبيق",
+  "settingsAbout": "معلومات عنا",
+  "settingsFAQ": "الأسئلة الشائعة",
+  "settingsHelp": "المساعدة والملاحظات",
+  "settingsLogout": "تسجيل الخروج"
+}
