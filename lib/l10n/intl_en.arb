@@ -17,19 +17,25 @@
   "back": "BACK",
   "next": "NEXT",
   "getStarted": "GET STARTED",
+  "WelcomescreenTitle": "Welcome to UpTodo",
+  "Welcomescreendescription": "Please login to your account or create new account to continue",
 
 
   
   "loginTitle": "Login",
+  "Createaccount": "Create Account",
   "registerTitle": "Register",
-  "usernameHint": "Username",
+  "username": "Username",
+  "usernameHint": "Enter your Username",
+
   "emailHint": "Enter your Email",
-  "passwordHint": "••••••••",
+  "passwordHint": "* * * * * * * ",
+  "password": "password",
   "loginButton": "Login",
   "registerButton": "Register",
   "loginWithGoogle": "Login with Google",
   "loginWithApple": "Login with Apple",
-  "dontHaveAccount": "Don't have an account? Register",
+  "dontHaveAccount": "Don't have an account?",
   "alreadyHaveAccount": "Already have an account? Login",
 
   "homeEmptyStateTitle": "What do you want to do today?",

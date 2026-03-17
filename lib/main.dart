@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:uptodo/Screens/Loginscreen.dart';
 import 'package:uptodo/Screens/Onboading.dart';
+import 'package:uptodo/Screens/StartScreen.dart';
 import 'package:uptodo/core/constant/approutes/AppRouts.dart';
 import 'package:uptodo/core/constant/themes/Appthemes.dart';
 import 'package:uptodo/generated/l10n.dart';
@@ -29,14 +31,17 @@ class MyApp extends StatelessWidget {
       darkTheme: AppThemes.dark,
       themeMode: ThemeMode.dark,
       routes: {
-        Approuts.Onboading: (context) => const Onboading(),
-        Approuts.StartScreen: (context) => const Scaffold(body: Center(child: Text('Start Screen'))),
-        Approuts.LoginScreen: (context) => const Scaffold(body: Center(child: Text('Login Screen'))),
-        Approuts.RegisterScreen: (context) => const Scaffold(body: Center(child: Text('Register Screen'))),
-        Approuts.home: (context) => const Scaffold(body: Center(child: Text('Home Screen'))),
+        Approuts.Onboading: (context) => Onboading(),
+        Approuts.StartScreen: (context) =>
+            Startscreen(),
+        Approuts.LoginScreen: (context) =>
+            Loginscreen(),
+        Approuts.RegisterScreen: (context) =>
+            const Scaffold(body: Center(child: Text('Register Screen'))),
+        Approuts.home: (context) =>
+            const Scaffold(body: Center(child: Text('Home Screen'))),
       },
-        initialRoute: Approuts.Onboading,
+      initialRoute: Approuts.Onboading,
     );
-    
   }
 }

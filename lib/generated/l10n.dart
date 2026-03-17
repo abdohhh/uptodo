@@ -144,9 +144,39 @@ class S {
     return Intl.message('GET STARTED', name: 'getStarted', desc: '', args: []);
   }
 
+  /// `Welcome to UpTodo`
+  String get WelcomescreenTitle {
+    return Intl.message(
+      'Welcome to UpTodo',
+      name: 'WelcomescreenTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please login to your account or create new account to continue`
+  String get Welcomescreendescription {
+    return Intl.message(
+      'Please login to your account or create new account to continue',
+      name: 'Welcomescreendescription',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Login`
   String get loginTitle {
     return Intl.message('Login', name: 'loginTitle', desc: '', args: []);
+  }
+
+  /// `Create Account`
+  String get Createaccount {
+    return Intl.message(
+      'Create Account',
+      name: 'Createaccount',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Register`
@@ -155,8 +185,18 @@ class S {
   }
 
   /// `Username`
+  String get username {
+    return Intl.message('Username', name: 'username', desc: '', args: []);
+  }
+
+  /// `Enter your Username`
   String get usernameHint {
-    return Intl.message('Username', name: 'usernameHint', desc: '', args: []);
+    return Intl.message(
+      'Enter your Username',
+      name: 'usernameHint',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Enter your Email`
@@ -169,9 +209,19 @@ class S {
     );
   }
 
-  /// `••••••••`
+  /// `* * * * * * * `
   String get passwordHint {
-    return Intl.message('••••••••', name: 'passwordHint', desc: '', args: []);
+    return Intl.message(
+      '* * * * * * * ',
+      name: 'passwordHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `password`
+  String get password {
+    return Intl.message('password', name: 'password', desc: '', args: []);
   }
 
   /// `Login`
@@ -204,10 +254,10 @@ class S {
     );
   }
 
-  /// `Don't have an account? Register`
+  /// `Don't have an account?`
   String get dontHaveAccount {
     return Intl.message(
-      'Don\'t have an account? Register',
+      'Don\'t have an account?',
       name: 'dontHaveAccount',
       desc: '',
       args: [],

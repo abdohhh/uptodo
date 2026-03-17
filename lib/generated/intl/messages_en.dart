@@ -22,6 +22,13 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "Createaccount": MessageLookupByLibrary.simpleMessage("Create Account"),
+    "WelcomescreenTitle": MessageLookupByLibrary.simpleMessage(
+      "Welcome to UpTodo",
+    ),
+    "Welcomescreendescription": MessageLookupByLibrary.simpleMessage(
+      "Please login to your account or create new account to continue",
+    ),
     "addTaskTitle": MessageLookupByLibrary.simpleMessage("Add Task"),
     "alreadyHaveAccount": MessageLookupByLibrary.simpleMessage(
       "Already have an account? Login",
@@ -33,7 +40,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "choosePriority": MessageLookupByLibrary.simpleMessage("Choose Priority"),
     "chooseTime": MessageLookupByLibrary.simpleMessage("Choose Time"),
     "dontHaveAccount": MessageLookupByLibrary.simpleMessage(
-      "Don\'t have an account? Register",
+      "Don\'t have an account?",
     ),
     "emailHint": MessageLookupByLibrary.simpleMessage("Enter your Email"),
     "getStarted": MessageLookupByLibrary.simpleMessage("GET STARTED"),
@@ -72,7 +79,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "onboardingTitle3": MessageLookupByLibrary.simpleMessage(
       "Organize your tasks",
     ),
-    "passwordHint": MessageLookupByLibrary.simpleMessage("••••••••"),
+    "password": MessageLookupByLibrary.simpleMessage("password"),
+    "passwordHint": MessageLookupByLibrary.simpleMessage("* * * * * * * "),
     "profileTitle": MessageLookupByLibrary.simpleMessage("Profile"),
     "registerButton": MessageLookupByLibrary.simpleMessage("Register"),
     "registerTitle": MessageLookupByLibrary.simpleMessage("Register"),
@@ -89,6 +97,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "skip": MessageLookupByLibrary.simpleMessage("SKIP"),
     "taskDescriptionHint": MessageLookupByLibrary.simpleMessage("Description"),
     "taskNameHint": MessageLookupByLibrary.simpleMessage("Do math homework"),
-    "usernameHint": MessageLookupByLibrary.simpleMessage("Username"),
+    "username": MessageLookupByLibrary.simpleMessage("Username"),
+    "usernameHint": MessageLookupByLibrary.simpleMessage("Enter your Username"),
   };
 }
