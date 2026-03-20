@@ -19,4 +19,6 @@ class AppColors {
   //login
   static const Color textfieldborder = Color(0xFF1D1D1D);
   static const Color textfieldbackground = Color(0xFF979797);
+  //bottom nav
+  static const Color bottomnavactive = Color(0xff363636);
 }

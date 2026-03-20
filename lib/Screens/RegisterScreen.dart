@@ -6,17 +6,18 @@ import 'package:uptodo/core/constant/approutes/AppRouts.dart';
 import 'package:uptodo/core/constant/colors/Appcolors.dart';
 import 'package:uptodo/generated/l10n.dart';
 
-class Loginscreen extends StatefulWidget {
-  const Loginscreen({super.key});
+class Registerscreen extends StatefulWidget {
+  const Registerscreen({super.key});
 
   @override
-  State<Loginscreen> createState() => _LoginscreenState();
+  State<Registerscreen> createState() => _RegisterscreenState();
 }
 
-class _LoginscreenState extends State<Loginscreen> {
+class _RegisterscreenState extends State<Registerscreen> {
   GlobalKey<FormState> Formkey = GlobalKey<FormState>();
   TextEditingController usernameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  TextEditingController confirmPasswordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +41,7 @@ class _LoginscreenState extends State<Loginscreen> {
                     Row(
                       children: [
                         Text(
-                          S.of(context).loginTitle,
+                          S.of(context).registerTitle,
                           style: GoogleFonts.lato(
                             fontSize: 32,
                             fontWeight: FontWeight.bold,
@@ -86,7 +87,7 @@ class _LoginscreenState extends State<Loginscreen> {
                               hintText: S.of(context).usernameHint,
                             ),
                           ),
-                          SizedBox(height: 25),
+                          SizedBox(height: 15),
                           Text(
                             S.of(context).password,
                             style: GoogleFonts.lato(
@@ -98,11 +99,14 @@ class _LoginscreenState extends State<Loginscreen> {
                             ),
                           ),
                           SizedBox(height: 5),
+
                           TextFormField(
                             controller: passwordController,
                             validator: (value) {
                               if (value == null || value.isEmpty) {
                                 return 'Please enter your password';
+                              } else if (value.length < 6) {
+                                return 'Password must be at least 6 characters';
                               }
                               return null;
                             },
@@ -111,6 +115,37 @@ class _LoginscreenState extends State<Loginscreen> {
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               hintText: S.of(context).passwordHint,
+                            ),
+                          ),
+
+                          SizedBox(height: 15),
+                          Text(
+                            S.of(context).ConfirmPassword,
+                            style: GoogleFonts.lato(
+                              fontSize: 16,
+                              fontWeight: FontWeight.normal,
+                              color: Theme.of(
+                                context,
+                              ).textTheme.bodyMedium!.color,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                          TextFormField(
+                            controller: confirmPasswordController,
+                            validator: (value) {
+                              if (value == null || value.isEmpty) {
+                                return 'Please confirm your password';
+                              }
+                              if (value != passwordController.text) {
+                                return 'Passwords do not match';
+                              }
+                              return null;
+                            },
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              hintText: S.of(context).confirmPasswordHint,
                             ),
                           ),
                         ],
@@ -127,7 +162,7 @@ class _LoginscreenState extends State<Loginscreen> {
                           Navigator.pushNamed(context, Approuts.home);
                         }
                       },
-                      text: S.of(context).loginTitle,
+                      text: S.of(context).registerTitle,
                     ),
                     SizedBox(height: 5),
                     Divider(height: 20, thickness: 1),
@@ -139,19 +174,17 @@ class _LoginscreenState extends State<Loginscreen> {
                             : "Assets/icons/apple.png",
                         Iconsize: 24,
                         transparent: true,
-                        onPressed: () {
-                          Navigator.pushNamed(context, Approuts.home);
-                        },
+                        onPressed: () {},
                         text: i == 0
-                            ? S.of(context).loginWithGoogle
-                            : S.of(context).loginWithApple,
+                            ? S.of(context).registerWithGoogle
+                            : S.of(context).registerWithApple,
                       ),
 
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          S.of(context).dontHaveAccount,
+                          S.of(context).alreadyHaveAccount,
                           style: GoogleFonts.lato(
                             fontSize: 12,
                             fontWeight: FontWeight.normal,
@@ -159,13 +192,10 @@ class _LoginscreenState extends State<Loginscreen> {
                         ),
                         TextButton(
                           onPressed: () {
-                            Navigator.pushNamed(
-                              context,
-                              Approuts.RegisterScreen,
-                            );
+                            Navigator.pushNamed(context, Approuts.LoginScreen);
                           },
                           child: Text(
-                            S.of(context).registerButton,
+                            S.of(context).loginButton,
                             style: GoogleFonts.lato(
                               fontSize: 12,
                               fontWeight: FontWeight.bold,

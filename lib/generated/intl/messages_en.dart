@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "ConfirmPassword": MessageLookupByLibrary.simpleMessage("Confirm Password"),
     "Createaccount": MessageLookupByLibrary.simpleMessage("Create Account"),
     "WelcomescreenTitle": MessageLookupByLibrary.simpleMessage(
       "Welcome to UpTodo",
@@ -31,7 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "addTaskTitle": MessageLookupByLibrary.simpleMessage("Add Task"),
     "alreadyHaveAccount": MessageLookupByLibrary.simpleMessage(
-      "Already have an account? Login",
+      "Already have an account?",
     ),
     "appName": MessageLookupByLibrary.simpleMessage("UpTodo"),
     "back": MessageLookupByLibrary.simpleMessage("BACK"),
@@ -39,6 +40,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "chooseCategory": MessageLookupByLibrary.simpleMessage("Choose Category"),
     "choosePriority": MessageLookupByLibrary.simpleMessage("Choose Priority"),
     "chooseTime": MessageLookupByLibrary.simpleMessage("Choose Time"),
+    "confirmPasswordHint": MessageLookupByLibrary.simpleMessage(
+      "* * * * * * * ",
+    ),
     "dontHaveAccount": MessageLookupByLibrary.simpleMessage(
       "Don\'t have an account?",
     ),
@@ -84,6 +88,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "profileTitle": MessageLookupByLibrary.simpleMessage("Profile"),
     "registerButton": MessageLookupByLibrary.simpleMessage("Register"),
     "registerTitle": MessageLookupByLibrary.simpleMessage("Register"),
+    "registerWithApple": MessageLookupByLibrary.simpleMessage(
+      "Register with Apple",
+    ),
+    "registerWithGoogle": MessageLookupByLibrary.simpleMessage(
+      "Register with Google",
+    ),
     "saveBtn": MessageLookupByLibrary.simpleMessage("Save"),
     "settingsAbout": MessageLookupByLibrary.simpleMessage("About Us"),
     "settingsAppLanguage": MessageLookupByLibrary.simpleMessage("App Language"),

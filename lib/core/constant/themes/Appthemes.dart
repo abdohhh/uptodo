@@ -52,6 +52,14 @@ class AppThemes {
         bodyLarge: TextStyle(color: AppColors.textPrimarydark.withOpacity(.78)),
         bodySmall: TextStyle(color: AppColors.bodysmalltext),
       ),
+
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        backgroundColor: AppColors.bottomnavactive,
+        selectedIconTheme: IconThemeData(color: AppColors.bodysmalltext),
+        unselectedIconTheme: IconThemeData(
+          color: AppColors.textfieldbackground,
+        ),
+      ),
     );
   }
 }

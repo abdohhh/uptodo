@@ -25,7 +25,9 @@ class _OnboadingState extends State<Onboading> {
             Row(
               children: [
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, Approuts.StartScreen);
+                  },
                   child: Text(
                     S.of(context).skip,
                     style: GoogleFonts.lato(

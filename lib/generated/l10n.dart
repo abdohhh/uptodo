@@ -234,11 +234,51 @@ class S {
     return Intl.message('Register', name: 'registerButton', desc: '', args: []);
   }
 
+  /// `Confirm Password`
+  String get ConfirmPassword {
+    return Intl.message(
+      'Confirm Password',
+      name: 'ConfirmPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `* * * * * * * `
+  String get confirmPasswordHint {
+    return Intl.message(
+      '* * * * * * * ',
+      name: 'confirmPasswordHint',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Login with Google`
   String get loginWithGoogle {
     return Intl.message(
       'Login with Google',
       name: 'loginWithGoogle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Register with Apple`
+  String get registerWithApple {
+    return Intl.message(
+      'Register with Apple',
+      name: 'registerWithApple',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Register with Google`
+  String get registerWithGoogle {
+    return Intl.message(
+      'Register with Google',
+      name: 'registerWithGoogle',
       desc: '',
       args: [],
     );
@@ -264,10 +304,10 @@ class S {
     );
   }
 
-  /// `Already have an account? Login`
+  /// `Already have an account?`
   String get alreadyHaveAccount {
     return Intl.message(
-      'Already have an account? Login',
+      'Already have an account?',
       name: 'alreadyHaveAccount',
       desc: '',
       args: [],
