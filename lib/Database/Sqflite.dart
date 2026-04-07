@@ -43,6 +43,7 @@ TaskPriority INTEGER
         Tasktitle: maps[index]["Tasktitle"] as String,
         Description: maps[index]["Description"] as String,
         TaskPriority: maps[index]["TaskPriority"] as int,
+        isCompleted: maps[index]["isCompleted"] as bool,
       );
     });
   }
